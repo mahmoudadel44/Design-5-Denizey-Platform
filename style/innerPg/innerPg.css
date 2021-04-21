@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif; }
+
+/*nav bar*/
+.navbar {
+  background-color: #37517e; }
+  .navbar .color-white {
+    color: white; }
+  .navbar .get-started {
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #47b2e4;
+    font-weight: 600; }
+    .navbar .get-started:hover {
+      color: #fff;
+      background: #31a9e1;
+      text-decoration: none; }
+
+/*Section Title General*/
+.sectionTitle {
+  text-align: center;
+  padding-bottom: 30px; }
+  .sectionTitle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e; }
+    .sectionTitle h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #ddd;
+      bottom: 1px;
+      left: calc(50% - 60px); }
+    .sectionTitle h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #47b2e4;
+      bottom: 0;
+      left: calc(50% - 20px); }
+  .sectionTitle p {
+    margin-bottom: 0; }
+
+/*Common Button*/
+.commonBtn {
+  background-color: #47b2e4;
+  padding: 1%;
+  border-radius: 10px; }
+
+/*breadcrump*/
+.routes, .breadcrumb {
+  background-color: #F3F5FA;
+  padding: 0;
+  margin: 0; }
+  .routes nav h5, .breadcrumb nav h5 {
+    color: #37517e;
+    margin-bottom: 0;
+    font-weight: bold; }
+    .routes nav h5 ol li, .breadcrumb nav h5 ol li {
+      font-size: 11px; }
+    .routes nav h5 ol a, .breadcrumb nav h5 ol a {
+      color: #47b2e4; }
+
+.ourNewsLetter {
+  background-color: #F3F5FA;
+  padding: 40px;
+  display: flex; }
+  .ourNewsLetter p {
+    margin-top: 0px;
+    color: #66676B; }
+  .ourNewsLetter h3 {
+    color: #37517e; }
+  .ourNewsLetter .input-group .form-control {
+    border-right-style: hidden;
+    box-shadow: 4px 4px 4px rgba(20, 45, 100, 0.1);
+    -webkit-box-shadow: 4px 4px 4px rgba(20, 45, 100, 0.1);
+    -moz-box-shadow: 4px 4px 4px rgba(20, 45, 100, 0.1);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none; }
+  .ourNewsLetter .input-group .input-group-text {
+    border-radius: 20px;
+    position: absolute;
+    right: -15px;
+    background-color: #47b2e4;
+    color: #fff;
+    cursor: pointer; }
+
+/*footer*/
+.foot .arshaFooter h4, .foot .arshaList h4 {
+  color: #37517e;
+  font-weight: bold; }
+.foot .arshaList .fa-chevron-right {
+  color: #47b2e4; }
+.foot .arshaList ul li:hover {
+  cursor: pointer;
+  color: #47b2e4; }
+.foot .arshaSocialNetwork h4 {
+  color: #37517e;
+  font-weight: bold; }
+.foot .arshaSocialNetwork .fa-twitter, .foot .arshaSocialNetwork .fa-facebook, .foot .arshaSocialNetwork .fa-instagram, .foot .arshaSocialNetwork .fa-skype, .foot .arshaSocialNetwork .fa-linkedin {
+  color: white;
+  background-color: #47b2e4;
+  border-radius: 50%;
+  padding: 3%; }
+
+.footerInfo {
+  background-color: #37517e;
+  color: white; }
+  .footerInfo a {
+    color: #47b2e4; }
+
+/*# sourceMappingURL=innerPg.css.map */

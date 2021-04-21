@@ -1,0 +1,10 @@
+$mainBlueColor: #37517e
+;
+$secondaryBluecolor: #47b2e4
+;
+* {
+padding : 0;
+margin : 0;
+box-sizing : border-box;
+font-family: 'Public Sans', sans-serif;
+}

@@ -1,0 +1,229 @@
+$mainBlueColor: #37517e;
+$secondaryBluecolor: #47b2e4;
+
+* {
+padding : 0;
+margin : 0;
+box-sizing : border-box;
+font-family: 'Public Sans', sans-serif;
+}
+
+/*Section Title General*/
+.sectionTitle {
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: $mainBlueColor;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: $secondaryBluecolor;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+/*Common Button*/
+.commonBtn {
+    background-color: $secondaryBluecolor;
+    padding: 1%;
+    border-radius: 10px;
+}
+@mixin BoxShadow ($HrShadow,$VrShadow,$Blur,$rgba) {
+    box-shadow: $HrShadow $VrShadow $Blur $rgba;
+    -webkit-box-shadow: $HrShadow $VrShadow $Blur $rgba;
+    -moz-box-shadow: $HrShadow $VrShadow $Blur $rgba;
+}
+/*nav kbar*/
+.navbar {
+    background-color: $mainBlueColor;
+    .color-white{
+        color:white;
+    }
+    .get-started
+    {
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
+        &:hover{
+            color: #fff;
+            background: #31a9e1;
+            text-decoration: none;
+        }
+    }
+}
+.routes,.breadcrumb{
+    background-color: #F3F5FA;
+    padding: 0;
+    margin: 0;
+        nav h5{
+            color: $mainBlueColor;
+            margin-bottom: 0;
+        ol{ 
+            li{
+                font-size: 11px;
+            }
+            a{
+                color: $secondaryBluecolor;
+            }
+        }
+    }
+    h5 {
+        font-weight: bold;
+    }
+}
+
+//start styles of portofolioCarousel
+.portofolioCarousel {
+    .carousel-indicators{
+        bottom: -24px;
+        right: unset;
+        left: -18px;
+        top: unset;
+        justify-content:flex-start;
+        margin:0;
+        padding-left:15px;
+        padding-right:15px;
+        li{
+            background-color: #CCC;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+        }
+        .active{
+            background-color: $secondaryBluecolor;
+        }
+    }
+    .carousel-caption{
+        bottom: -100px;
+        right: 0;
+        left: unset;
+        color:#333;
+        width: 26%;
+        height: auto;
+        padding-right: 22px;
+        @include BoxShadow(4px, 4px, 4px,rgba(20, 45, 100, 0.1));
+        h5{
+            margin-right: 28px;
+        }
+        p,hr{
+            display: flex;
+            margin-left: 30px;
+        }
+        .projectTitle{
+    font-weight: bold;
+        }
+    }
+
+}
+//end styles of portofolioCarousel
+
+//start styles of portofolioDetails
+.portofolioDetails{
+    h3{
+        margin-top: 60px;
+    }
+    p{
+        color:#717A80;
+    }
+}
+//end styles of portofolioDetails
+
+//start styles of OurNewsLetter
+.ourNewsLetter{
+    background-color: #F3F5FA;
+    padding:40px;
+    display: flex;
+    p{
+        margin-top: 0px;
+        color: #66676B;
+    }
+    h3{
+        color: $mainBlueColor;
+    }
+    .input-group{
+        .form-control{
+            border-right-style: hidden;
+            @include BoxShadow(4px, 4px, 4px,rgba(20, 45, 100, 0.1));
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border:none
+        }
+        .input-group-text{
+            border-radius: 20px;
+            position: absolute;
+            right: -15px;
+            background-color: $secondaryBluecolor;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+/*Footer*/
+.foot {
+    .arshaFooter , .arshaList {
+        h4 {
+            color: $mainBlueColor;
+            font-weight: bold;
+        }
+    }
+    .arshaList {
+        .fa-chevron-right {
+            color: $secondaryBluecolor;
+        }
+        ul {
+            li {
+                &:hover {
+                    cursor: pointer;
+                    color: $secondaryBluecolor;
+                }
+            }
+        }
+    }
+    .arshaSocialNetwork {
+        h4 {
+            color: $mainBlueColor;
+            font-weight: bold;
+        }
+        .fa-twitter ,.fa-facebook ,.fa-instagram ,.fa-skype ,.fa-linkedin {
+            color: white;
+            background-color: $secondaryBluecolor;
+            border-radius: 50%;
+            padding: 3%;
+        }
+    }
+}
+.footerInfo {
+    background-color: $mainBlueColor;
+    color: white;
+    a {
+        color: $secondaryBluecolor;
+    }
+}
